@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+<!-- 	<definition name="recruitmentFee" extends="site.definition"> -->
+<!-- 		<put-attribute name="title" value="MSRTC Portal" type="string" /> -->
+<!-- 		<put-attribute name="body" value="/WEB-INF/jsps/staticPages/recruitmentFee.jsp" /> -->
+<!-- 	</definition> -->
+	
+<!-- 	<definition name="importantInfo" extends="site.definition"> -->
+<!-- 		<put-attribute name="title" value="MSRTC Portal" type="string" /> -->
+<!-- 		<put-attribute name="body" value="/WEB-INF/jsps/staticPages/importantInformation.jsp" /> -->
+<!-- 	</definition> -->
+	
+<!-- 	<definition name="instructionForRegistration" extends="site.definition"> -->
+<!-- 		<put-attribute name="title" value="MSRTC Portal" type="string" /> -->
+<!-- 		<put-attribute name="body" value="/WEB-INF/jsps/staticPages/instructionForRegistration.jsp" /> -->
+<!-- 	</definition> -->
+	
+<!-- 	<definition name="timetable" extends="site.definition"> -->
+<!-- 		<put-attribute name="title" value="MSRTC Portal" type="string" /> -->
+<!-- 		<put-attribute name="body" value="/WEB-INF/jsps/staticPages/timetable.jsp" /> -->
+<!-- 	</definition> -->
+
+	<definition name="menuPdfList" extends="site.definition">
+		<put-attribute name="title" value="MSRTC Portal" type="string" />
+		<put-attribute name="body" value="/WEB-INF/jsps/staticPages/menuPdfList.jsp" />
+	</definition>
+	
+	<definition name="aboutUs" extends="site.definition">
+		<put-attribute name="title" value="MSRTC Portal" type="string" />
+		<put-attribute name="body" value="/WEB-INF/jsps/staticPages/aboutUs.jsp" />
+	</definition>
+	
+</tiles-definitions>

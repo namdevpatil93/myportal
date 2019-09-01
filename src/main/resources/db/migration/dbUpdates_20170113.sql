@@ -1,0 +1,10 @@
+UPDATE `posts` SET `post_title` = 'Driver (Jr.)' WHERE `post_id` = '1';
+UPDATE `posts` SET `post_title` = 'Conductor (Jr.)' WHERE `post_id` = '2';
+UPDATE `posts` SET `post_title` = 'Clerk Typist (Jr.)' WHERE `post_id` = '3';
+UPDATE `posts` SET `post_title` = 'Assistant(Jr.)' WHERE `post_id` = '4';
+UPDATE `posts` SET `post_title` = 'Accountant (Jr.) / Jr.Stock Verifier (Jr.)' WHERE `post_id` = '7';
+UPDATE `posts` SET `post_title` = 'Store Supervisor (Jr.) / Sr. Stock Verifier (Jr.)' WHERE `post_id` = '8';
+UPDATE `posts` SET `post_title` = 'Junior Engineer (Electrical)(Jr.)' WHERE `post_id` = '14';
+UPDATE `posts` SET `post_title` = 'Asst. Works Superintendent (Jr.)' WHERE `post_id` = '15';
+UPDATE `posts` SET `post_title` = 'Sr.Computer Operator (Jr.) / Divisional Computer Supervisor (Jr.)' WHERE `post_id` = '18';
+UPDATE `posts` SET `post_title` = 'Driver Cum Conductor (Jr.)' WHERE `post_id` = '21';

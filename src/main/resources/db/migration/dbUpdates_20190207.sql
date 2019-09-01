@@ -1,0 +1,1 @@
+ALTER TABLE `applicant_post_assoc` ADD COLUMN `advt_no` TINYINT(1) NULL AFTER `post_grad_degree_institute_name`;

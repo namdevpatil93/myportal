@@ -1,0 +1,126 @@
+buildscript {
+	repositories {
+		maven { url "http://repo1.maven.org/maven2" }
+        maven { url 'http://repo.spring.io/plugins-release' }
+
+	}
+	dependencies {
+        classpath group: 'org.springframework.boot', name: 'spring-boot-gradle-plugin', version: spring_boot_version
+        classpath group: 'org.springframework.build.gradle', name: 'propdeps-plugin', version: propdeps_plugin_version
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'eclipse-wtp'
+apply plugin: 'idea'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'propdeps'
+apply plugin: 'war'
+apply from: './gradle/querydsl.gradle'
+/*apply from: './gradle/pmd.gradle'*/
+/*apply from: './gradle/findbugs.gradle'*/
+
+war {
+	baseName = 'msrtcPortal'
+	version = ''
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    maven { url "http://repo1.maven.org/maven2" }
+    maven { url 'https://repo.itextsupport.com/releases' }
+    jcenter()
+}
+
+configurations {
+	providedRuntime
+}
+
+dependencies {
+    compile group: 'cn.apiclub.tool', name: 'simplecaptcha', version: '1.2.2'
+	compile('org.springframework.boot:spring-boot-starter-aop')
+	compile('org.springframework.boot:spring-boot-starter-data-jpa')
+	compile('org.springframework.boot:spring-boot-devtools')
+	compile('org.springframework.boot:spring-boot-starter-integration')
+	compile('org.springframework.boot:spring-boot-starter-mail')
+	compile('org.springframework.boot:spring-boot-starter-security')
+	compile(group: 'org.springframework.boot', name: 'spring-boot-starter-web') { exclude module: 'spring-boot-starter-tomcat' }
+	compile group: 'org.springframework.security', name: 'spring-security-taglibs', version: spring_security_version
+    compile group: 'org.springframework.hateoas', name: 'spring-hateoas', version : spring_hateoas_version
+	
+	compile group: 'org.jasypt', name: 'jasypt', version: jasypt_version
+    compile group: 'org.jasypt', name: 'jasypt-spring31', version: jasypt_spring31_version
+    compile group: 'org.jasypt', name: 'jasypt-springsecurity3', version: jasypt_springsecurity3_version
+
+    compile group: 'org.apache.tiles', name: 'tiles-core', version: tiles_version
+    compile group: 'org.apache.tiles', name: 'tiles-api', version: tiles_version
+    compile group: 'org.apache.tiles', name: 'tiles-jsp', version: tiles_version
+
+    compile group: 'javax.servlet', name: 'jstl', version: jstl_version
+
+    compile group : 'org.codehaus.janino', name : 'janino', version : janino_version
+    compile group: 'javax.inject', name: 'javax.inject', version: javax_inject_version
+
+    compile group: 'commons-codec', name: 'commons-codec', version: commons_codec_version
+    compile group: 'org.apache.commons', name : 'commons-lang3', version: commons_lang3_version
+    compile group: 'commons-fileupload', name : 'commons-fileupload', version: commons_fileupload_version
+	
+	providedCompile group: 'javax.servlet', name: 'javax.servlet-api', version: servlet_api_version
+
+    runtime('mysql:mysql-connector-java')
+
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+
+    optional group: 'org.springframework.boot', name:'spring-boot-configuration-processor', version: spring_boot_version
+
+    compile group: 'org.apache.poi', name : 'poi', version : poi_version
+    compile group: 'org.apache.poi', name : 'poi-ooxml', version : poi_version
+    compile group: 'org.apache.httpcomponents', name :'httpclient', version : httpclient_version
+    
+    compile group: 'com.google.code.gson', name :'gson', version :gson_version
+
+    compile group: 'org.zeroturnaround' , name : 'zt-zip', version : 1.12
+
+    /****************************************************************************/
+    /****************** Email Integration dependencies start below **************/
+    /****************************************************************************/
+    compile group: 'javax.mail', name :'mail', version : javax_mail_version
+    compile group: 'org.springframework.boot', name :'spring-boot-starter-integration'
+    compile group: 'org.springframework.integration', name :'spring-integration-mail', version: spring_integration_mail_version
+    compile group: 'org.apache.velocity', name :'velocity', version : velocity_version
+
+    /****************************************************************************/
+    /****************** itext dependencies start below **************/
+    /****************************************************************************/
+    compile group: 'com.itextpdf', name :'itext7-core', version : itext_version
+    compile group: 'com.itextpdf', name :'typography', version : '1.0.2'
+    compile group: 'com.itextpdf', name :'html2pdf', version : '1.0.0'
+    compile group: 'com.itextpdf', name :'itext-licensekey', version : '2.0.4'
+
+    /****************************************************************************/
+    /****************** Testing dependencies start below ************************/
+    /****************************************************************************/
+    testCompile group: 'org.springframework.boot', name:'spring-boot-starter-test'
+
+    /* below is needed only for testing using spock and groovy. */
+    /* spock and groovy dependencies start here. */
+    testCompile group: 'org.codehaus.groovy', name: 'groovy-all', version: groovy_version
+    testCompile group: 'org.spockframework', name: 'spock-core', version: spock_version
+    testCompile group: 'org.spockframework', name: 'spock-spring', version: spock_version
+    testCompile group: 'cglib', name: 'cglib-nodep', version: cglib_version
+    testCompile group: 'org.objenesis', name: 'objenesis', version: objenesis_version
+    testCompile group: 'com.blogspot.toomuchcoding', name: 'spock-subjects-collaborators-extension', version: spock_subjects_collaborators_extension
+    testCompile( 'com.athaydes:spock-reports:1.2.12' ) {
+        transitive = false // this avoids affecting your version of Groovy/Spock
+    }
+    /* spock and groovy dependencies end here. */
+    
+    /****************** opencsv ************************/
+    compile group: 'com.opencsv', name: 'opencsv', version: opencsv_version
+    
+}
+
+compileJava.dependsOn(processResources)

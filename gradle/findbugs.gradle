@@ -1,0 +1,16 @@
+apply plugin: 'findbugs'
+
+findbugs {
+  ignoreFailures = true
+}
+
+tasks.withType(FindBugs) {
+    reports {
+        xml.enabled = false
+        html.enabled = true
+    }
+}
+
+tasks.withType(FindBugs).each {task -> configure(task) {
+    group = "FindBugs"
+}}

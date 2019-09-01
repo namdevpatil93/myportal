@@ -1,0 +1,14 @@
+{
+  "name": "jQuery-bootstrap",
+  "homepage": "https://github.com/gagi270683/jQuery-bootstrap",
+  "_release": "5c20e488b3",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "5c20e488b37f3a8bb156fc363f140b67cfdaf623"
+  },
+  "_source": "https://github.com/gagi270683/jQuery-bootstrap.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/gagi270683/jQuery-bootstrap.git",
+  "_direct": true
+}

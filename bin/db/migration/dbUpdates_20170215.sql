@@ -1,0 +1,2 @@
+INSERT INTO module_operations (module_operation_id, module_operation_name, display_name, module_id) VALUES ('103', 'correctChallanOrderNo', 'Correct Offline Order No', '5'); 
+INSERT INTO role_module_operation_assoc (role_module_operation_id, role_id, module_operation_id) VALUES ('132', '3', '103'); 

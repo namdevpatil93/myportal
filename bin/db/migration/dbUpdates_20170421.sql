@@ -1,0 +1,3 @@
+INSERT INTO `system_settings` (`id`, `description`, `modified_time`, `value`) VALUES('15','ExamBenchBaseUrl','2017-04-14 11:48:43','http://192.168.1.105:8081/msrtc-ws');
+INSERT INTO `system_settings` (`id`, `description`, `modified_time`, `value`) VALUES('16','ExamBenchAccessToken','2017-04-14 11:48:43','05f9b17b-ed02-4e10-ab5e-d58f1eea8a4c');
+UPDATE module_operations SET module_operation_name='applicantDashboard,getExamDataFromExamBench' WHERE module_operation_id=2;

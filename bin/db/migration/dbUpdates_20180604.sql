@@ -1,0 +1,1 @@
+ALTER TABLE document_subcategory CHANGE document_type document_type BIGINT(20) DEFAULT '0' NOT NULL, CHANGE category_type category_type BIGINT(20) DEFAULT '0' NOT NULL; 

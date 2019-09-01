@@ -1,0 +1,1 @@
+INSERT INTO system_settings (id, description, modified_time, value) VALUES ('13', 'Last date of application', '2017-01-09 11:35:30', '10/02/2017');

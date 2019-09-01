@@ -1,0 +1,5 @@
+Hello ${firstName},
+Thank you for registering with MSRTC.
+Your login credentials is sent to your E-Mail ID.
+Login and verify your mobile number in "My Account" section.
+Mobile Verification Code: ${otpNumber}

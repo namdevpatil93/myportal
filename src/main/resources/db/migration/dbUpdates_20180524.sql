@@ -1,0 +1,2 @@
+ALTER TABLE `applicants` ADD COLUMN `child_of_farmer_who_committed_suicide` TINYINT(1) NULL AFTER `mobile_no_verified`; 
+ALTER TABLE `qualifications` ADD COLUMN `active` BOOLEAN NOT NULL AFTER `priority`; 

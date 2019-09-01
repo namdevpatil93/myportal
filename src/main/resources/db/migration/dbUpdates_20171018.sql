@@ -1,0 +1,1 @@
+ALTER TABLE `posts` ADD COLUMN `show_user_response` TINYINT(1) NULL AFTER `show_admit_card`;

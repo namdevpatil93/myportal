@@ -1,0 +1,31 @@
+{
+  "name": "portal",
+  "description": "Registration Portal",
+  "main": "",
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "bootstrap-validator": "^0.11.5",
+    "bootbox.js": "bootbox#^4.4.0",
+    "eonasdan-bootstrap-datetimepicker": "^4.17.43",
+    "bootstrap-fileinput": "^4.3.3",
+    "bootstrap-select": "^1.10.0",
+    "awesome-bootstrap-checkbox": "^0.3.7",
+    "components-font-awesome": "^4.7.0",
+    "smartwizard": "^4.0.5",
+    "jquery": "1.11.1",
+    "jquery-form": "^3.46.0",
+    "imageviewer": "^0.5.1",
+    "jquery-idle-timeout": "^1.2.222",
+    "jquery-i18n-properties": "^1.2.2",
+    "bootstrap-toggle": "^2.2.2",
+    "ckeditor": "^4.6.1",
+    "jQuery-bootstrap": "https://github.com/gagi270683/jQuery-bootstrap.git"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

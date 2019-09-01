@@ -1,0 +1,1 @@
+UPDATE module_operations SET module_operation_name = 'showUploadChallan, saveChallan, downloadChallanData, showPostPaymentCount,showPostPaymentMismatchCount' WHERE module_operation_id = '22'; 

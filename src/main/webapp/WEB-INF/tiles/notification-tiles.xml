@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+    <definition name="queriesAndNotifications" extends="base.definition">
+        <put-attribute name="title" value="Queries And Notification" type="string" />
+        <put-attribute name="body" value="/WEB-INF/jsps/notification/queriesAndNotifications.jsp" />
+    </definition>
+
+    <definition name="notificationForm" template="/WEB-INF/jsps/notification/notificationForm.jsp"/>
+    <definition name="notificationList" template="/WEB-INF/jsps/notification/notificationList.jsp"/>
+    <definition name="notificationListResult" template="/WEB-INF/jsps/notification/notificationListResult.jsp"/>
+    
+    <definition name="userNotificationList" extends="base.definition">
+        <put-attribute name="title" value="User Notification List" type="string" />
+        <put-attribute name="body" value="/WEB-INF/jsps/notification/userNotificationList.jsp" />
+    </definition>
+    
+    <definition name="userNotificationListResult" template="/WEB-INF/jsps/notification/userNotificationListResult.jsp"/>
+
+</tiles-definitions>

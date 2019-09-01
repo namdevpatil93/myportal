@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+    <definition name="uploadChallan" extends="base.definition">
+        <put-attribute name="title" value="Challan Form" type="string" />
+        <put-attribute name="body" value="/WEB-INF/jsps/challan/uploadChallan.jsp" />
+    </definition>
+
+    <definition name="viewPreviousUploads" extends="base.definition">
+        <put-attribute name="title" value="View Previous Uploads" type="string" />
+        <put-attribute name="body" value="/WEB-INF/jsps/challan/viewPreviousUploads.jsp" />
+    </definition>
+
+    <definition name="challanList" template="/WEB-INF/jsps/challan/challanList.jsp"/>
+    <definition name="challanListResult" template="/WEB-INF/jsps/challan/challanListResult.jsp"/>
+
+    <definition name="challanFileList" template="/WEB-INF/jsps/challan/challanFileList.jsp"/>
+    <definition name="challanFileListResult" template="/WEB-INF/jsps/challan/challanFileListResult.jsp"/>
+
+    <definition name="onlineQueryApi" extends="base.definition">
+        <put-attribute name="title" value="Qnline Query Api" type="string" />
+        <put-attribute name="body" value="/WEB-INF/jsps/challan/onlineQueryApi.jsp" />
+    </definition>
+
+    <definition name="paymentSearchForm" extends="base.definition">
+        <put-attribute name="title" value="Payment Search Form" type="string" />
+        <put-attribute name="body" value="/WEB-INF/jsps/challan/paymentSearchForm.jsp" />
+    </definition>
+    <definition name="postPaymentMismatchList" template="/WEB-INF/jsps/challan/postPaymentMismatchList.jsp"/>
+    <definition name="postPaymentMismatchResultList" template="/WEB-INF/jsps/challan/postPaymentMismatchResultList.jsp"/>
+
+</tiles-definitions>

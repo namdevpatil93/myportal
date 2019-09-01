@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+    <definition name="applicantDashboard" extends="base.definition">
+        <put-attribute name="title" value="User Form" type="string" />
+        <put-attribute name="body" value="/WEB-INF/jsps/applicant/applicantDashboard.jsp" />
+    </definition>
+
+    <definition name="viewProfile" extends="base.definition">
+        <put-attribute name="title" value="View Profile" type="string" />
+        <put-attribute name="body" value="/WEB-INF/jsps/applicant/profile/viewProfile.jsp" />
+    </definition>
+
+    <definition name="applicantChangePassword" extends="base.definition">
+        <put-attribute name="title" value="User Form" type="string" />
+        <put-attribute name="body" value="/WEB-INF/jsps/applicant/applicantChangePassword.jsp" />
+    </definition>
+
+    <definition name="apply" extends="base.definition">
+        <put-attribute name="title" value="User Form" type="string" />
+        <put-attribute name="body" value="/WEB-INF/jsps/applicant/apply/apply.jsp" />
+    </definition>
+	
+	<definition name="myAccount" extends="base.definition">
+        <put-attribute name="title" value="User Form" type="string" />
+        <put-attribute name="body" value="/WEB-INF/jsps/applicant/myAccount.jsp" />
+    </definition>
+    
+     <definition name="applicantQueryList" extends="base.definition">
+        <put-attribute name="title" value="Queries And Notification" type="string" />
+        <put-attribute name="body" value="/WEB-INF/jsps/applicantQuery/applicantQueryList.jsp" />
+    </definition>
+    
+    <definition name="applicantQueryReplyForm" extends="base.definition">
+        <put-attribute name="title" value="Queries And Notification" type="string" />
+        <put-attribute name="body" value="/WEB-INF/jsps/applicantQuery/applicantQueryReplyForm.jsp" />
+    </definition>
+    
+    <definition name="personalInformation" template="/WEB-INF/jsps/applicant/apply/personalInformation.jsp"/>
+    <definition name="otherInformation" template="/WEB-INF/jsps/applicant/apply/otherInformation.jsp"/>
+    <definition name="postSelection" template="/WEB-INF/jsps/applicant/apply/postSelection.jsp"/>
+    <definition name="selectPosts" template="/WEB-INF/jsps/applicant/apply/selectPosts.jsp"/>
+    <definition name="applicantFiles" template="/WEB-INF/jsps/applicant/apply/applicantFiles.jsp"/>
+    <definition name="confirmation" template="/WEB-INF/jsps/applicant/apply/confirmation.jsp"/>
+    <definition name="selectPaymentMode" template="/WEB-INF/jsps/applicant/payment/selectPaymentMode.jsp"/>
+    <definition name="offlinePayment" template="/WEB-INF/jsps/applicant/payment/offlinePayment.jsp"/>
+    <definition name="onlinePayment" template="/WEB-INF/jsps/applicant/payment/onlinePayment.jsp"/>
+
+    <definition name="viewPostDetails" template="/WEB-INF/jsps/applicant/apply/viewPostDetails.jsp"/>
+    
+    <definition name="viewChallan" extends="base.definition">
+        <put-attribute name="title" value="User Form" type="string" />
+        <put-attribute name="body" value="/WEB-INF/jsps/applicant/viewChallan.jsp" />
+    </definition>
+    
+    <!-- <definition name="viewChallan" template="/WEB-INF/jsps/applicant/viewChallan.jsp" /> -->
+
+    <definition name="paymentResponse" extends="base.definition">
+        <put-attribute name="title" value="Payment Response" type="string" />
+        <put-attribute name="body" value="/WEB-INF/jsps/applicant/payment/paymentResponse.jsp" />
+    </definition>
+    
+    <definition name="examResponse" extends="base.definition">
+        <put-attribute name="title" value="Exam Response" type="string" />
+        <put-attribute name="body" value="/WEB-INF/jsps/applicant/applicantExamResponse.jsp" />
+    </definition>
+</tiles-definitions>

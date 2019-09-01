@@ -1,0 +1,71 @@
+
+/*CSS for pagination header and footer starts */
+
+.pagination-header,
+.pagination-footer {
+    margin: 15px 0;
+}
+.pagination-header a,
+.pagination-footer a {
+    outline: 0;
+}
+.pagination-header .search,
+.pagination-footer .search {
+    display: inline-block;
+    margin: 0 20px 0 0;
+    vertical-align: middle;
+    width: 180px;
+}
+.pagination-header .search .glyphicon,
+.pagination-footer .search .glyphicon {
+    top: 0;
+}
+.pagination-header .search .fa,
+.pagination-footer .search .fa {
+    display: table-cell;
+}
+.pagination-header .search.search-field::-ms-clear,
+.pagination-footer .search.search-field::-ms-clear,
+.pagination-header .search .search-field::-ms-clear,
+.pagination-footer .search .search-field::-ms-clear {
+    display: none;
+}
+.pagination-header .pagination,
+.pagination-footer .pagination {
+    margin: 0 !important;
+}
+.pagination-header .actionBar,
+.pagination-footer .infoBar {
+    text-align: right;
+}
+.pagination-header .actionBar .btn-group > .btn-group .dropdown-menu,
+.pagination-footer .infoBar .btn-group > .btn-group .dropdown-menu {
+    text-align: left;
+}
+.pagination-header .actionBar .btn-group > .btn-group .dropdown-menu .dropdown-item,
+.pagination-footer .infoBar .btn-group > .btn-group .dropdown-menu .dropdown-item {
+    cursor: pointer;
+    display: block;
+    margin: 0;
+    padding: 3px 20px;
+    white-space: nowrap;
+}
+.pagination-header .actionBar .btn-group > .btn-group .dropdown-menu .dropdown-item:hover,
+.pagination-footer .infoBar .btn-group > .btn-group .dropdown-menu .dropdown-item:hover,
+.pagination-header .actionBar .btn-group > .btn-group .dropdown-menu .dropdown-item:focus,
+.pagination-footer .infoBar .btn-group > .btn-group .dropdown-menu .dropdown-item:focus {
+    color: #262626;
+    text-decoration: none;
+    background-color: #f5f5f5;
+}
+.pagination-header .actionBar .btn-group > .btn-group .dropdown-menu .dropdown-item.dropdown-item-checkbox,
+.pagination-footer .infoBar .btn-group > .btn-group .dropdown-menu .dropdown-item.dropdown-item-checkbox,
+.pagination-header .actionBar .btn-group > .btn-group .dropdown-menu .dropdown-item .dropdown-item-checkbox,
+.pagination-footer .infoBar .btn-group > .btn-group .dropdown-menu .dropdown-item .dropdown-item-checkbox {
+    margin: 0 2px 4px 0;
+    vertical-align: middle;
+}
+.pagination-header .actionBar .btn-group > .btn-group .dropdown-menu .dropdown-item.disabled,
+.pagination-footer .infoBar .btn-group > .btn-group .dropdown-menu .dropdown-item.disabled {
+    cursor: not-allowed;
+}

@@ -1,0 +1,17 @@
+apply plugin: 'pmd'
+
+pmd {
+    toolVersion = "5.5.1"
+    ignoreFailures = true
+}
+
+tasks.withType(Pmd) {
+    reports {
+        xml.enabled = false
+        html.enabled = true
+    }
+}
+
+tasks.withType(Pmd).each {task -> configure(task) {
+    group = "pmd"
+}}

@@ -1,0 +1,2 @@
+ALTER TABLE `applicant_post_assoc` ADD COLUMN `required_qualification_marks` FLOAT(5) NOT NULL AFTER `is_ssc_passed`; 
+ALTER TABLE `applicant_post_assoc` ADD COLUMN `other_qualification` INT(11) NULL AFTER `pdf_generated`; 

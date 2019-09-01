@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+    <definition name="messageForm" template="/WEB-INF/jsps/message/messageForm.jsp"/>
+    <definition name="messageList" template="/WEB-INF/jsps/message/messageList.jsp"/>
+    <definition name="messageListResult" template="/WEB-INF/jsps/message/messageListResult.jsp"/>
+
+</tiles-definitions>

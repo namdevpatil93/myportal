@@ -1,0 +1,1 @@
+ALTER TABLE `applicant_post_assoc` ADD COLUMN `post_grad_degree_type_id` INT NULL AFTER `dc_division_id`, ADD COLUMN `post_grad_degree_institute_name` VARCHAR(50) NULL AFTER `post_grad_degree_type_id`;

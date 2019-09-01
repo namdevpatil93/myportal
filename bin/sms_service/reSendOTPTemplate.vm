@@ -1,0 +1,2 @@
+Hello ${firstName},
+Your Mobile Verification Code (OTP) is: ${otpNumber}

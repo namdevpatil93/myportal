@@ -1,0 +1,1 @@
+insert into `module_operations` ( `module_operation_name`, `display_name`, `module_id`) values('viewAdmitCardAttachment','viewAdmitCardAttachment','2');

@@ -1,0 +1,2 @@
+ALTER TABLE `qualifications` ADD COLUMN `active` TINYINT(1) NOT NULL AFTER `priority`; 
+UPDATE `module_operations` SET `module_operation_name` = 'qualificationList, newQualification,editQualification, saveQualification, deleteQualification, uploadQualificationExcel' WHERE `module_operation_id` = '107';

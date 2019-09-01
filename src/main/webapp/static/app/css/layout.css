@@ -1,0 +1,176 @@
+*{margin:0;padding:0;}
+/*
+*,*:after, *:before {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;padding: 0;margin: 0;}
+*/
+body{background: #EBEBEB;font-family: Arial, Helvetica, sans-serif;font-size: 12px;color: #666}
+.right{float: right}.left{float: left}
+img{border: none}
+ul, li{margin: 0;padding: 0;list-style: none}
+form{margin: 0;padding: 0}
+a{color: #0088B5;font-weight: bold}
+a:hover{color: #0078A0}
+.txtnowrap{white-space:nowrap;}
+
+/*ClearFix*/
+.clearfix:before, .clearfix:after {content:" "; display:table;}
+.clearfix:after {clear: both;}
+
+
+#container{width: 930px;padding: 15px;border-radius: 13px;background: #fff;margin: 10px auto;overflow: auto}
+#content{width: 930px;overflow: auto}
+
+
+#header{}
+.logo-grid{float:left;}
+.logo{float: left}
+
+.top-ad-grid{float:left;margin-left: 50px;}
+
+ul#toplinks{float: right;color: #999;padding: 0;list-style: none}
+ul#toplinks li{float: left;margin: 0;border-right: 1px solid #666;padding:0 10px;}
+ul#toplinks li:last-child{border-right:0;padding-right:0;}
+ul#toplinks a{color: #666;font-weight: normal;float:left;text-decoration:none;line-height:12px;}
+ul#toplinks a:hover{color: #008DBC;font-weight: normal;text-decoration:underline;}
+
+/*Main Menu*/
+.mainmenu{clear:both;background:#0eb0e6;float:left;width:100%;border-radius:6px;padding:0 10px;box-sizing: border-box;margin: 10px 0 0;}
+.mainmenu li{float:left;}
+.mainmenu li a{padding: 14px 10px;border-right: 1px solid #fff;display: block;color: #fff;text-decoration: none;line-height: 12px;font-size: 14px;font-weight: normal;}
+.mainmenu li:last-child a{border-right:0;}
+.mainmenu li a:hover,.mainmenu li.activeMenu a{background:#1b8eb5;}
+
+
+
+#nav{width: 910px;background: #008DBC url(images/bg_nav.png) repeat-x bottom;padding: 9px 0 10px 20px;border-radius: 10px;color: #fff;height: 12px;margin: 15px 0}
+#nav li{padding-right: 20px;float: left;display: block}
+#nav a{color: #fff;text-decoration: none;font-weight: normal}
+#nav a:hover{color: #33CCFF}
+
+
+#footer{width: 960px;text-align: center;margin: 10px auto;padding-bottom: 15px;clear: both}
+#footer a{color: #666;font-weight: normal}
+
+
+#topbox{padding: 20px;border-radius: 10px;background: #00ACE6 repeat-x bottom;overflow: auto;color: #fff;width: 890px;margin:15px 0;}
+#topbox h4{color: #fff;font-size: 20px;letter-spacing: -1px;margin: 0;padding: 0 0 5px 0}
+#topbox input{border: 1px solid #0093C4;padding: 3px 3px;width: 230px}
+#topbox select{margin-left: 3px}
+#topbox .btn{padding: 3px 5px;background: #004055;color: #fff;border: none;border-radius: 3px;position: absolute;margin-left: 5px;cursor: pointer;width: 60px;font-size: 11px}
+#topbox .btn:hover{background: #005773}
+
+
+#tbleft{float: left;width: 450px;padding: 15px 0 0 10px}
+#tbleft .tld{width: 75px}
+#tbright{font-size: 12px;float: right;width: 390px;border-left: 1px solid #00ACE5;padding-left: 15px}
+#tbright h4{margin:0 0 0 85px;}
+#tbright #boxleft{float: left;width: 225px}
+#tbright input{width: 145px;margin: 5px 0 0 5px}
+#tbright p{float: right;margin: 0;padding: 0}
+#tbright p.link{float: left;margin: 3px 0 0 74px;font-size: 11px;padding: 0}
+#tbright p.link input{margin-left:0;}
+#tbright a{color: #fff;text-decoration: underline}
+
+
+#promobox{width: 930px;position: relative;float: left;margin-bottom: 15px}
+#promobox p{margin: 0;padding: 0}
+#promobox .section{width: calc(100% - 660px);padding: 20px 10px 20px 20px;float: left;margin: 0 15px 0 0;border-radius: 10px;color: #006C91;background: #f7f7f7}
+#promobox .section:last-child{margin-right:0;}
+#promobox ul{margin: 0 0 10px 0}
+#promobox .section ul li{margin: 5px 0 0 0;background: url(images/bullet.png) no-repeat left 8px;padding: 0 0 0 10px;width: 250px}
+#promobox li h3{line-height: 1;color: #006C91;letter-spacing: -1px;font-size: 25px;float: left;margin: 0;padding: 0 0 3px 0}
+#promobox li .pricebox{line-height: 1;float: right;text-align: center;padding-right: 10px}
+#promobox li .pricebox .lrg{line-height: 1;letter-spacing: -1px;font-size: 35px;font-weight: bold;margin: 0;padding: 0}
+#promobox a{background: #004055;color: #fff;float: left;margin: 15px 10px 0 0;padding: 5px 10px;text-decoration: none;border-radius: 5px;font-weight: normal}
+#promobox a:hover{background: #005773}
+#promobox li.two{background: #00ACE6 url(images/bg_promo2.png) repeat-x bottom}
+#promobox li.three{margin-right: 0;background: #09C1FF url(images/bg_promo3.png) repeat-x bottom}
+
+.vertical-marquee{height:160px;overflow:hidden;}
+
+#newsbox{padding: 20px;background: #f7f7f7;float: left;border-radius: 10px}
+#newsbox p{margin: 0;padding: 0}
+#newsbox h5{font-size: 25px;letter-spacing: -1px;color: #006C91;margin: 0;padding: 0;line-height: 1}
+#newsbox h6 a{font-size: 14px;letter-spacing: -1px;color: #006C91;margin: 0;padding: 0;line-height: 1}
+#newsbox h6{margin-bottom: 2px;padding: 0;line-height: 1}
+#newsbox li{margin-top: 15px;line-height: 1.5em}
+#newsbox .rss a{float: right;margin: 3px 8px 0 0;color: #999;font-weight: normal}
+
+
+#quotes{width: 260px;padding: 20px;float: right;background: #09C1FF url(images/bg_promo3.png) repeat-x bottom;border-radius: 10px;color: #fff}
+#quotes p{margin: 0;padding: 0}
+#quotes h3{line-height: 1;letter-spacing: -1px;font-size: 25px;margin: 0;padding: 0}
+#quotes li{margin-top: 17px;font-size: 17px;font-weight: bold;letter-spacing: -1px}
+#quotes a{float: left;color: #fff;padding: 0;margin-top: 15px}
+
+
+.titletxt{background:#00ACE6;color:#fff; height:40px;text-align:center;margin:10px 0;border-radius:6px;}
+.titletxt p{font-size:16px; padding-top:8px;}
+
+.form-table{}
+.form-table td{padding:5px;vertical-align:top}
+.form-table select{border: 1px solid #cecbcb;height: 26px;width:250px;margin:0 0 4px;}
+.form-table input{height:22px;width:246px;}
+
+.form-table input[type="radio"],.form-table input[type="checkbox"],.form-table input[type="file"],.form-table input[type="button"],.form-table input[type="submit"],.form-table input[type="image"]
+{width:auto;height:auto;}
+
+
+/**************Custom CSS Changes************/
+h1, h2, h3, h4, h5, h6 { margin:0; padding: 0; }
+.red { color: red; }
+
+#container { width: 960px; }
+.content-grid{min-height:200px;}
+#topbox { width: 930px; }
+#topbox h4 { line-height: 41px; font-weight: bold; }
+#tbright h4 { line-height: 47px; font-weight: bold; }
+.form-control { border-radius: 0; height: auto; font-size: 12px; }
+#tbright #boxleft { width: 260px; }
+#tbright p.link { margin: 3px 0 0 85px; }
+#promobox .section { width: calc(100% - 630px); }
+#boxleft label { font-weight: normal; margin-bottom: 0; }
+#promobox h3 { font-size: 14px; font-weight: bold; line-height: 23px; }
+
+/******************/
+.registermain { background: #F7F7F7; padding-bottom: 15px; }
+.registermain h4 { padding: 15px 0; }
+.registerwrap { width: 840px; margin: 0 auto; }
+.form-group.required label span{  }
+.form-horizontal .control-label { text-align: left; }
+.form-horizontal .col-xs-4 { width: 290px !important;}
+.form-horizontal .col-xs-8 { width: 540px !important;}
+.form-horizontal .radio-inline span { margin-top: 3px; display: inline-block; }
+.form-horizontal .btn.btn-success { border-radius: 0; }
+
+/**Custom footer**/
+.headerbar { background-color: #00ACE6; color: #fff; font-size: 16px; border-radius: 5px; padding:10px 20px; margin-bottom: 20px; }
+.adversetable .table-bordered th{ background-color:#00ACE6; color:#fff; text-align: center; }
+.adversetable .table-bordered td { color: #000; font-weight: bold; padding: 6px 10px; }
+.footersub {text-align: left; }
+.ticker { border:1px solid #CCC; margin-bottom: 20px; }
+.ticker .row{padding: 5px 10px; }
+
+/*News Ticker Table*/
+.news-item .table {margin-bottom: 5px;}
+.news-item td p{margin:0;}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+	input[type=date].form-control { line-height: normal; }
+}
+
+/** Custom CSS for forgotten change password validation **/
+form div .error {color: #a94442; font-size: 12px; font-weight: bolder !important;}
+form div .form-control.error {border-color: #a94442;}
+
+form-group.has-error{font-color: #000000 !important;}
+
+.help-block.with-errors{color: #a94442; font-size: 12px; font-weight: bolder !important;}
+
+.registrationnote li {
+    list-style-type: disc;
+    padding-bottom: 3px;
+    margin-left: 15px;
+}
+.registrationnote { background: #f7f7f7 none repeat scroll 0 0; padding: 10px; }
+
+.registermain ul { background-color: #fff; padding: 10px; }

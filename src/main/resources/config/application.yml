@@ -1,0 +1,56 @@
+# ===================================================================
+# Spring Boot configuration.
+#
+# This configuration will be overriden by the Spring profile you use,
+# for example applicant-dev.yml if you use the "dev" profile.
+# ===================================================================
+
+spring:
+    datasource:
+        jndi-name: java:comp/env/jdbc/appDB
+    jpa:
+        properties:
+            hibernate.dialect:  org.hibernate.dialect.MySQLDialect
+            hibernate.id.new_generator_mappings: false
+            hibernate.hbm2ddl.auto: none
+            hibernate.current_session_context_class: org.springframework.orm.hibernate4.SpringSessionContext
+    mail:
+        host: email-smtp.us-east-1.amazonaws.com
+        username: AKIAIR73B2DPJZ5MHAWA
+        password: AioRu9eEm5NeaMHChZXp9FSym8eVbmE/J1YfotCb6B7f
+        properties.mail.smtp.starttls.enable: true
+        port: 587
+        protocol: smtp
+    http:
+        multipart:
+            max-file-size: 10MB
+
+server:
+    error:
+        whitelabel:
+            enabled: false
+
+# ===================================================================
+# Application specific custom properties
+# ===================================================================
+# base-path: /home/administrator/MSRTC/server/appFiles
+
+application:
+    security:
+          session-timeout: 30
+    resources:
+         base-path: /opt/MSRTC/server/appFiles
+         epassBasePath: /opt/MSRTC/server/epass
+    bill-desk-payment-gateway:
+         bill-desk-u-r-l: https://pgi.billdesk.com/pgidsk/PGIMerchantPayment
+         checksum-key: nhIGKqqK799H
+         merchant-id: MSRTCHR
+         security-id: msrtchr
+         query-api-url: https://www.billdesk.com/pgidsk/PGIQueryController
+
+# ===================================================================
+# Flyway specific properties
+# ===================================================================
+
+flyway:
+    enabled: false

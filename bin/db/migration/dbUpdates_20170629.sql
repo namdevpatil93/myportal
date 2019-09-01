@@ -1,0 +1,1 @@
+ALTER TABLE `posts` ADD COLUMN `show_admit_card` TINYINT(1) NULL AFTER `post_code`;

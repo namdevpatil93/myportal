@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Failed Payment Email</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<p>
+    Hello ${applicant.firstName} ${applicant.lastName},
+</p>
+
+<p>Your payment has been failed. Here are the details of the transaction for your reference.</p>
+<p>Transaction ID : ${paymentTransactionResponse.orderNo} </p>
+<p>Transaction Reference No: ${paymentTransactionResponse.txnReferenceNo} </p>
+<p>Transaction Amount : ${paymentTransactionResponse.txnAmount} </p>
+
+<p>Contact your bank for more details.</p>
+<p>Go back to try the payment again.</p>
+
+<p>This is a system generated mail. Please do not reply to this email ID. </p>
+
+<p>
+    <span>Warm Regards, </span>
+    <br/>
+    <br/>
+    Recruitment Cell
+    <br/>
+    MSRTC
+</p>
+
+</body>
+</html>

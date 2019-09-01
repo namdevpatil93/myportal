@@ -1,0 +1,4 @@
+"BRANCH NO : 00300                                                                                PROC DATE : 04/01/2017",,,,,,,,,,,,,,,,,,,
+"JRNL-NO","TRAN-MODE","FROM-ACCOUNT-SYS","FROM-ACCT-NO","FEE-TYPE","Reg/Ref No.    ","DOB            ","TRAN-DATE ","TRAN-BRANCH","TRAN-TIME","Account No.    ","AMOUNT         ","APPLICANT NAME ","               ","               ","POST APPLIED   ","CATEGORY       ","               ","               ","Last date for acceptance"
+321,213,523,5654,563,00000000009876543210,"11/11/89","11/11/89","text","12:10:00 PM",989898989898,1000,"User",,,"abc","xyz",,,"10/10/99"
+" ACCOUNT NO    ","           ",,,"TOTAL AMOUNT     ","00000000000001000+",,,"NO OF RECORDS       ",1,,,,,,,,,,

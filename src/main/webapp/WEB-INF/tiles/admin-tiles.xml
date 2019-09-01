@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+	<definition name="applicantList" extends="base.definition">
+        <put-attribute name="title" value="Applicant List" type="string" />
+        <put-attribute name="body" value="/WEB-INF/jsps/admin/applicantList.jsp" />
+    </definition>
+
+	<definition name="applicantListResult" template="/WEB-INF/jsps/admin/applicantListResult.jsp"/>
+	
+	<definition name="applicantAttachmentDownloadForm" extends="base.definition">
+        <put-attribute name="title" value="Applicant Attachment Download Form" type="string" />
+        <put-attribute name="body" value="/WEB-INF/jsps/admin/applicantAttachmentDownloadForm.jsp" />
+    </definition>
+
+    <definition name="administration" extends="base.definition">
+        <put-attribute name="title" value="Administration" type="string" />
+        <put-attribute name="body" value="/WEB-INF/jsps/admin/administration.jsp" />
+    </definition>
+
+    <definition name="resetApplicantPassword" template="/WEB-INF/jsps/admin/resetApplicantPassword.jsp" />
+    <definition name="postSettings" template="/WEB-INF/jsps/admin/postSettings.jsp" />
+
+</tiles-definitions>

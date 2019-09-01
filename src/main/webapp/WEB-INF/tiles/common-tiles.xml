@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+	<definition name="site.definition" template="/WEB-INF/jsps/layout/siteLayout.jsp">
+		<put-attribute name="title" value="MSRTC" type="string"></put-attribute>
+		<put-attribute name="header" value="/WEB-INF/jsps/common/siteHeader.jsp"></put-attribute>
+		<put-attribute name="menu" value="/WEB-INF/jsps/common/siteMenu.jsp"></put-attribute>
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsps/common/siteFooter.jsp"></put-attribute>
+	</definition>
+
+	<definition name="base.definition" template="/WEB-INF/jsps/layout/baseLayout.jsp">
+		<put-attribute name="title" value="MSRTC" type="string"></put-attribute>
+		<put-attribute name="header" value="/WEB-INF/jsps/common/header.jsp"></put-attribute>
+		<put-attribute name="body" value="" />
+		<put-attribute name="menu" value="/WEB-INF/jsps/common/menu.jsp"></put-attribute>
+		<put-attribute name="footer" value="/WEB-INF/jsps/common/footer.jsp"></put-attribute>
+	</definition>
+
+    <definition name="minimal.definition" template="/WEB-INF/jsps/layout/minimalLayout.jsp">
+        <put-attribute name="title" value="MSRTC" type="string"></put-attribute>
+        <put-attribute name="body" value="" />
+    </definition>
+
+	<definition name="adminLogin" extends="minimal.definition">
+		<put-attribute name="title" value="Login" type="string" />
+		<put-attribute name="body" value="/WEB-INF/jsps/adminLogin.jsp" />
+	</definition>
+
+	<definition name="adminDashboard" extends="base.definition">
+		<put-attribute name="title" value="Admin Dashboard" type="string" />
+		<put-attribute name="body" value="/WEB-INF/jsps/admin/dashboard.jsp" />
+	</definition>
+
+	<definition name="landingPage" extends="site.definition">
+		<put-attribute name="title" value="MSRTC Portal" type="string" />
+		<put-attribute name="body" value="/WEB-INF/jsps/landingPage.jsp" />
+	</definition>
+
+	<definition name="registrationPage" extends="site.definition">
+		<put-attribute name="title" value="User Form" type="string" />
+		<put-attribute name="body" value="/WEB-INF/jsps/applicant/register.jsp" />
+	</definition>
+
+	<definition name="registrationSuccess" extends="site.definition">
+		<put-attribute name="title" value="Registration Success" type="string" />
+		<put-attribute name="body" value="/WEB-INF/jsps/applicant/registrationSuccess.jsp" />
+	</definition>
+
+	<definition name="forgotPasswordForm" extends="site.definition">
+		<put-attribute name="title" value="MSRTC Portal" type="string" />
+		<put-attribute name="body" value="/WEB-INF/jsps/applicant/forgotPasswordForm.jsp" />
+	</definition>
+
+	<definition name="passwordResetForm" extends="site.definition">
+		<put-attribute name="title" value="MSRTC Portal" type="string" />
+		<put-attribute name="body" value="/WEB-INF/jsps/applicant/passwordResetForm.jsp" />
+	</definition>
+
+	<definition name="404" extends="base.definition">
+		<put-attribute name="title" value="404" type="string" />
+		<put-attribute name="body" value="/WEB-INF/jsps/404.jsp" />
+	</definition>
+
+	<definition name="500" extends="base.definition">
+		<put-attribute name="title" value="500" type="string" />
+		<put-attribute name="body" value="/WEB-INF/jsps/500.jsp" />
+	</definition>
+
+	<definition name="accessDenied" extends="base.definition">
+		<put-attribute name="title" value="Access Denied" type="string" />
+		<put-attribute name="body" value="/WEB-INF/jsps/accessDenied.jsp" />
+	</definition>
+	
+	<definition name="registrationClosedPage" extends="site.definition">
+		<put-attribute name="title" value="User Form" type="string" />
+		<put-attribute name="body" value="/WEB-INF/jsps/applicant/registrationClosed.jsp" />
+	</definition>
+
+</tiles-definitions>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+<!--     <definition name="advertisementForm" extends="base.definition"> -->
+<!--         <put-attribute name="title" value="Advertisement Form" type="string" /> -->
+<!--         <put-attribute name="body" value="/WEB-INF/jsps/advertisement/advertisementForm.jsp" /> -->
+<!--     </definition> -->
+
+<!--     <definition name="advertisementList" extends="base.definition"> -->
+<!--         <put-attribute name="title" value="Advertisement List" type="string" /> -->
+<!--         <put-attribute name="body" value="/WEB-INF/jsps/advertisement/advertisementList.jsp" /> -->
+<!--     </definition> -->
+    
+	<definition name="advertisementList" template="/WEB-INF/jsps/advertisement/advertisementList.jsp"/>
+	
+    <definition name="advertisementListResult" template="/WEB-INF/jsps/advertisement/advertisementListResult.jsp"/>
+	<definition name="advertisementForm" template="/WEB-INF/jsps/advertisement/advertisementForm.jsp"/>
+</tiles-definitions>

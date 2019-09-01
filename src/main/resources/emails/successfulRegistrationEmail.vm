@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Successful Registration Email</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<p>
+    Hello ${applicant.firstName} ${applicant.lastName},
+</p>
+
+<p>Thank you for registering with MSRTC.</p>
+<p>Your MSRTC Applicant ID: ${applicant.applicationId}</p>
+<p>Your MSRTC Registered Email Id : ${applicant.emailAddress} </p>
+<p>Your MSRTC registered Mobile Number : ${applicant.mobileNumber} </p>
+<p>The applicant id cannot be changed and hence we recommend that you store this email for your reference.</p>
+<p>Your login password for MSRTC: ${applicant.plainPassword} </p>
+<p>It requires a change at first login attempt.</p>
+
+<p>This is a system generated mail. Please do not reply to this email ID. </p>
+
+<p>
+    <span>Warm Regards, </span>
+    <br/>
+    <br/>
+    Recruitment Cell
+    <br/>
+    MSRTC
+</p>
+
+</body>
+</html>

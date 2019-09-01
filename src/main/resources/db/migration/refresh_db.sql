@@ -1,0 +1,47 @@
+-- Queries to clear out the MSRTC Portal DB for new Drive --
+SET FOREIGN_KEY_CHECKS = 0;
+TRUNCATE TABLE `advertisements`;
+TRUNCATE TABLE `applicant_files`;
+TRUNCATE TABLE `applicant_forms`;
+TRUNCATE TABLE `applicant_notifications`;
+TRUNCATE TABLE `applicant_other_information`;
+TRUNCATE TABLE `applicant_otps`;
+TRUNCATE TABLE `applicant_post_assoc`;
+TRUNCATE TABLE `applicant_queries`;
+TRUNCATE TABLE `applicants`;
+TRUNCATE TABLE `challan_files`;
+TRUNCATE TABLE `challans`;
+TRUNCATE TABLE `document_category`;
+TRUNCATE TABLE `document_subcategory`;
+TRUNCATE TABLE `documents`;
+TRUNCATE TABLE `change_password_requests`;
+TRUNCATE TABLE `documents`;
+TRUNCATE TABLE `messages`;
+TRUNCATE TABLE `notifications`;
+TRUNCATE TABLE `payment_transactions`;
+TRUNCATE TABLE `queries`;
+TRUNCATE TABLE `replies`;
+TRUNCATE TABLE `sms_sent_history`;
+TRUNCATE TABLE `user_notifications`;
+SET FOREIGN_KEY_CHECKS = 1;
+
+-- Queries to clear out the MSRTC EPASS DB for new Drive --
+SET FOREIGN_KEY_CHECKS = 0;
+TRUNCATE TABLE `ep_applicant_assigned_city_assoc`;
+TRUNCATE TABLE `ep_applicant_assigned_city_assoc_deleted`;
+TRUNCATE TABLE `ep_applicant_exam_marks`;
+TRUNCATE TABLE `ep_applicant_post_assoc`;
+TRUNCATE TABLE `ep_applicants`;
+TRUNCATE TABLE `ep_audit_logs`;
+TRUNCATE TABLE `ep_exam_applicant_assoc`;
+TRUNCATE TABLE `ep_exam_city_assoc`;
+TRUNCATE TABLE `ep_exam_date_assoc`;
+TRUNCATE TABLE `ep_exam_date_shift_assoc`;
+TRUNCATE TABLE `ep_exam_post_assoc`;
+TRUNCATE TABLE `ep_exams`;
+TRUNCATE TABLE `ep_merit_ranks`;
+TRUNCATE TABLE `ep_vacancy_matrix`;
+TRUNCATE TABLE `ep_venue_availability_date_shift_assoc`;
+TRUNCATE TABLE `ep_venue_availability_dates`;
+TRUNCATE TABLE `ep_venues`;
+SET FOREIGN_KEY_CHECKS = 1;

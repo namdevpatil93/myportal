@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+    <definition name="allDocuments" extends="base.definition">
+        <put-attribute name="title" value="Document Form" type="string" />
+        <put-attribute name="body" value="/WEB-INF/jsps/document/allDocuments.jsp" />
+    </definition>
+
+    <definition name="documentForm" template="/WEB-INF/jsps/document/documentForm.jsp"/>
+    <definition name="documentList" template="/WEB-INF/jsps/document/documentList.jsp"/>
+    <definition name="documentListResult" template="/WEB-INF/jsps/document/documentListResult.jsp"/>
+    <!-- <definition name="documents" template="/WEB-INF/jsps/document/documents.jsp"/> -->
+    <definition name="documents" extends="site.definition">
+		<put-attribute name="title" value="MSRTC Portal" type="string" />
+		<put-attribute name="body" value="/WEB-INF/jsps/document/documents.jsp" />
+	</definition>
+<definition name="categoryList" template="/WEB-INF/jsps/document/categoryList.jsp"/>
+<definition name="categoryForm" template="/WEB-INF/jsps/document/categoryForm.jsp"/>
+<definition name="categoryListResult" template="/WEB-INF/jsps/document/categoryListResult.jsp"/>
+<definition name="subCategoryList" template="/WEB-INF/jsps/document/subCategoryList.jsp"/>
+<definition name="subCategoryListResult" template="/WEB-INF/jsps/document/subCategoryListResult.jsp"/>
+<definition name="subCategoryForm" template="/WEB-INF/jsps/document/subCategoryForm.jsp"/>
+</tiles-definitions>

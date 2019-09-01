@@ -1,0 +1,20 @@
+{
+  "name": "jquery-idle-timeout",
+  "version": "1.2.222",
+  "main": [
+    "src/jquery.idletimeout.js",
+    "src/jquery.idletimer.js"
+  ],
+  "dependencies": {},
+  "homepage": "https://github.com/Vasioky/jquery-idle-timeout",
+  "_release": "1.2.222",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.2.222",
+    "commit": "6366d0ee801057edf45b41875b1e7ea1f447fd21"
+  },
+  "_source": "https://github.com/Vasioky/jquery-idle-timeout.git",
+  "_target": "^1.2.222",
+  "_originalSource": "jquery-idle-timeout",
+  "_direct": true
+}
