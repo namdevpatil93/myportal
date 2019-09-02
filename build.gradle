@@ -11,6 +11,8 @@ buildscript {
 }
 
 
+apply plugin: 'checkstyle'
+apply plugin: 'pmd'
 apply plugin: 'findbugs'
 apply plugin: 'java'
 apply plugin: 'eclipse'
@@ -32,20 +34,6 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 
-findbugs {
-    ignoreFailures = false
-    toolVersion = "3.0.1"
-    sourceSets=[sourceSets.main]
-    excludeFilter = file("config/findbugs/excludeFilter.xml")
-    reportsDir = file("$project.buildDir/reports/findbugs")
-    effort = "max"
-}
-tasks.withType(FindBugs) {
-    reports {
-        xml.enabled false
-        html.enabled true
-    }
-}
 
 repositories {
     maven { url "http://repo1.maven.org/maven2" }
