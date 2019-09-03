@@ -11,7 +11,6 @@ buildscript {
 }
 
 
-apply plugin: 'checkstyle'
 apply plugin: 'pmd'
 apply plugin: 'findbugs'
 apply plugin: 'java'
@@ -34,32 +33,6 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 
-checkstyle {
-    toolVersion '7.8.1'
-    configFile file("config/checkstyle/checkstyle.xml")
-}
-checkstyleMain {
-    source ='src/main/java'
-}
-checkstyleTest {
-    source ='src/test/java'
-}
-tasks.withType(Checkstyle) {
-    reports {
-        xml.enabled false
-        html.enabled true
-        html.stylesheet resources.text.fromFile('config/xsl/checkstyle-custom.xsl')
-    }
-}
-
-findbugs {
-    ignoreFailures = false
-    toolVersion = "3.0.1"
-    //sourceSets=[sourceSets.java]
-    excludeFilter = file("config/findbugs/excludeFilter.xml")
-    reportsDir = file("$project.buildDir/reports/findbugs")
-    effort = "max"
-}
 tasks.withType(FindBugs) {
     reports {
         xml.enabled false
@@ -67,21 +40,9 @@ tasks.withType(FindBugs) {
         html.stylesheet resources.text.fromFile('config/xsl/findbugs-custom.xsl')
     }
 }
-findbugs {
-    ignoreFailures = false
-    toolVersion = "3.0.1"
-   // sourceSets=[sourceSets.java]
-    excludeFilter = file("config/findbugs/excludeFilter.xml")
-    reportsDir = file("$project.buildDir/reports/findbugs")
-    effort = "max"
-}
-tasks.withType(FindBugs) {
-    reports {
-        xml.enabled false
-        html.enabled true
-    }
-}
 
+
+	
 repositories {
     maven { url "http://repo1.maven.org/maven2" }
     maven { url 'https://repo.itextsupport.com/releases' }
