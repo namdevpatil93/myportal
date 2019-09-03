@@ -24,6 +24,46 @@ apply from: './gradle/querydsl.gradle'
 /*apply from: './gradle/pmd.gradle'*/
 /*apply from: './gradle/findbugs.gradle'*/
 
+findbugs{
+    ignoreFailures=true
+    findbugsTest.enabled=false
+}
+tasks.withType(FindBugs) {
+    reports {
+        xml.enabled = false
+        html.enabled = true
+    }
+}
+tasks.withType(Pmd){
+    reports{
+        xml.enabled=true
+        html.enabled=true
+    }
+}
+
+pmd {
+   ignoreFailures = true
+    pmdTest.enabled=false
+    ruleSets = [
+            'java-basic',
+            'java-braces',
+            'java-clone',
+            'java-codesize',
+            'java-comments',
+            'java-controversial',
+            'java-coupling',
+            'java-design',
+            'java-empty',
+            'java-finalizers',
+            'java-imports',
+            'java-optimizations',
+            'java-strictexception',
+            'java-strings',
+            'java-typeresolution',
+            'java-unnecessary',
+            'java-unusedcode'
+    ]
+}
 war {
 	baseName = 'msrtcPortal'
 	version = ''
