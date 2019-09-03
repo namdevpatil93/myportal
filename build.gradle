@@ -55,7 +55,7 @@ tasks.withType(Checkstyle) {
 findbugs {
     ignoreFailures = false
     toolVersion = "3.0.1"
-    sourceSets=[sourceSets.main]
+    //sourceSets=[sourceSets.java]
     excludeFilter = file("config/findbugs/excludeFilter.xml")
     reportsDir = file("$project.buildDir/reports/findbugs")
     effort = "max"
@@ -70,7 +70,7 @@ tasks.withType(FindBugs) {
 findbugs {
     ignoreFailures = false
     toolVersion = "3.0.1"
-    sourceSets=[sourceSets.main]
+   // sourceSets=[sourceSets.java]
     excludeFilter = file("config/findbugs/excludeFilter.xml")
     reportsDir = file("$project.buildDir/reports/findbugs")
     effort = "max"
